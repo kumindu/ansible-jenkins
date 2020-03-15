@@ -15,9 +15,11 @@ and "private_key_file".Follow below mention command and example value
 
 ```
 $ sudo nano ansible.cfg 
+```
+Example:-
+```
 remote_user = "ubuntu"
 private_key_file = Openwitclub.pem
-
 ```
 After config ansible.cfg .Follow below mention command to excute ansible playbook.In "<Public_DNS>" 
 adding your aws ec2 instance public dns value ex:-("ec2-18-232-76-22.compute-1.amazonaws.com") 
