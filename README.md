@@ -10,10 +10,10 @@ $ sudo apt install ansible
 
 # Jenkins Installation
 
-Ansible Playbook for Implement Jenkins .
+First thing you have change config file
 
-### How to use
+Ansible Playbook for Implement Jenkins.
 
 ```
-ansible-playbook -i myserver.example.com, jenkins.yml
+ansible-playbook -i <awsserver_url>, jenkins.yml
 ```
