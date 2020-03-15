@@ -24,7 +24,7 @@ adding your aws ec2 instance public dns value ex:-("ec2-18-232-76-22.compute-1.a
 ```
 $ ansible-playbook -i <Public_DNS>, jenkins.yml
 ```
-Example code:-
+Example :-
 ```
 $ ansible-playbook -i ec2-18-232-76-22.compute-1.amazonaws.com, jenkins.yml
 ```
