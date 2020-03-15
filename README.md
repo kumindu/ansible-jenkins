@@ -10,10 +10,21 @@ $ sudo apt install ansible
 
 # Jenkins Installation
 
-First thing you have change config file
-
-Ansible Playbook for Implement Jenkins.
+First thing you have edit ansible.cfg file.Inside ansible.cfg you need define "remote_user" 
+and "private_key_file".Follow below mention command and example value
 
 ```
-ansible-playbook -i <awsserver_url>, jenkins.yml
+$ sudo nano ansible.cfg 
+remote_user = "ubuntu"
+private_key_file = Openwitclub.pem
+
+```
+After config ansible.cfg .Follow below mention command to excute ansible playbook.In "<Public_DNS>" 
+adding your aws ec2 instance public dns value ex:-("ec2-18-232-76-22.compute-1.amazonaws.com") 
+```
+$ ansible-playbook -i <Public_DNS>, jenkins.yml
+```
+Example code:-
+```
+$ ansible-playbook -i ec2-18-232-76-22.compute-1.amazonaws.com, jenkins.yml
 ```
